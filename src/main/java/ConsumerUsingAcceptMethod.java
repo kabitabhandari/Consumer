@@ -13,8 +13,7 @@ public class ConsumerUsingAcceptMethod {
         display.accept(10);
 
         // Consumer to multiply 2 to every integer of a list
-        Consumer<List<Integer>> modify = list ->
-        {
+        Consumer<List<Integer>> modify = list -> {
             for (int i = 0; i < list.size(); i++)
                 list.set(i, 2 * list.get(i));
         };
@@ -24,7 +23,7 @@ public class ConsumerUsingAcceptMethod {
 
         List<Integer> list = new ArrayList<>();
         list.add(2);
-        list.add(1);
+        list.add(11);
         list.add(3);
 
         // Implement modify using accept()
@@ -32,5 +31,8 @@ public class ConsumerUsingAcceptMethod {
 
         // Implement displayList using accept()
         displayList.accept(list);
+
+
+        modify.andThen(displayList).accept(list);
     }
 }

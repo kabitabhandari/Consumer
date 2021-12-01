@@ -1,4 +1,6 @@
-ConsumerUsingAcceptMethod.java
- ConsumerUsingAcceptMethod
 ConsumerUsingAndThenMethod.java
  ConsumerUsingAndThenMethod
+ConsumerUsingAcceptMethod.java
+ ConsumerUsingAcceptMethod
+SupplierClass.java
+ SupplierClass
